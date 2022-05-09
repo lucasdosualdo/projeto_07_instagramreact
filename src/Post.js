@@ -18,9 +18,12 @@ export default function Topo (props) {
 
 export default function Conteudo (props) {
     return (
+        <div class = "conteudo">
         <img src={props.imgContent}/>
+        </div>
     )
 }
+
 
 export default function Fundo (props) {
     const icons = ["heart-outline", "chatbubble-outline", "paper-plane-outline"];
@@ -28,9 +31,11 @@ export default function Fundo (props) {
     return (
         <div class="fundo">
         <div class="acoes">
+            <div>
         {icons.map (icon =>(
         <ion-icon name={icon}></ion-icon>
         ))}
+        </div>
           <div>
             <ion-icon name="bookmark-outline"></ion-icon>
           </div>
@@ -43,12 +48,17 @@ export default function Fundo (props) {
           </div>
         </div>
       </div>
-    )
+    );
 }
 
+
+
+
+
 export default function Post (props) {
-    <div class = "post" >
+    
     return (
+        <div class = "post" >
 
         <Topo imgUser = {props.imgUser} user = {props.user} />
         <Conteudo imgContent = {props.imgContent} />
@@ -57,6 +67,7 @@ export default function Post (props) {
         likedUser = {props.likedUser}
         likedQnt = {props.likedQnt}
         />
+        </div>
     )
-    </div>
+    
 }
