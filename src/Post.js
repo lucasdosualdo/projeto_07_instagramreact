@@ -1,8 +1,4 @@
-/*import Topo from './Topo';
-import Conteudo from './Conteudo';
-import Fundo from './Fundo';*/
-
-export default function Topo (props) {
+function Topo (props) {
     return (
         <div class="topo">
               <div class="usuario">
@@ -16,7 +12,7 @@ export default function Topo (props) {
     )
 }
 
-export default function Conteudo (props) {
+function Conteudo (props) {
     return (
         <div class = "conteudo">
         <img src={props.imgContent}/>
@@ -25,7 +21,7 @@ export default function Conteudo (props) {
 }
 
 
-export default function Fundo (props) {
+function Fundo (props) {
     const icons = ["heart-outline", "chatbubble-outline", "paper-plane-outline"];
     
     return (
