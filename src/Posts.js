@@ -8,7 +8,8 @@ export default function Posts () {
          imgContent: "img/gato-telefone.svg",
          likedImg: "img/respondeai.svg",
          likedUser: "respondeai",
-         likedQnt: "101.523"
+         likedQnt: "101.523",
+         liked: "false"
         },
         {
             imgUser: "img/barked.svg",
@@ -16,7 +17,8 @@ export default function Posts () {
             imgContent: "img/dog.svg",
             likedImg: "img/adorable_animals.svg",
             likedUser: "adorable_animals",
-            likedQnt: "99.159"
+            likedQnt: "99.159",
+            liked: "false"
            }
     ]
     return (
@@ -29,6 +31,7 @@ export default function Posts () {
             likedImg = {post.likedImg}
             likedUser = {post.likedUser}
             likedQnt = {post.likedQnt}
+            liked = {post.liked}
             />
         ))}
         </div>

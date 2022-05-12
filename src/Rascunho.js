@@ -262,3 +262,36 @@ export default function Stories () {
     )
 }
 */
+
+
+
+/*icon =>(
+  <ion-icon name={icon}></ion-icon>
+  )*/
+
+ /* function Fundo (props) {
+    const [like, setLike] = React.useState(false);
+    const icons = [`heart-outline`, "chatbubble-outline", "paper-plane-outline"];
+    console.log(like);
+
+    function Like (icon) {
+      if (icon==='heart-outline') {
+      return (        
+          <ion-icon name='heart-outline' onClick = {() => setLike(!like)}></ion-icon>
+      )
+      } else if (icon === 'heart') {
+        return (
+          <ion-icon name='heart' onClick = {() => setLike(!like)}></ion-icon>
+        )
+      } else {
+      return (
+        <ion-icon name={icon}></ion-icon>
+      )
+    }
+    }
+    
+    return (
+        <div class="fundo">
+        <div class="acoes">
+            <div>
+       {icons.map (Like)} */
