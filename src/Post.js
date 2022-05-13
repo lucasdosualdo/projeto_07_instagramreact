@@ -15,11 +15,11 @@ function Topo (props) {
 }
 
 
-function Conteudo (props, {likedTesteConteudo}) {
+function Conteudo ({imgContent, likedTesteConteudo}) {
   return (
       <div class = "conteudo">
       <img 
-      src={props.imgContent}
+      src={imgContent}
       onClick = {likedTesteConteudo}/>
       </div>
   )
@@ -27,7 +27,7 @@ function Conteudo (props, {likedTesteConteudo}) {
 
 
 
-function Fundo (props, {likedTesteFundo}, {like}) {
+function Fundo ({likedImg, likedUser, likedQnt, likedTesteFundo, like}) {
 
     /*const [like, setLike] = React.useState(props.liked);
     const icons = ["heart-outline", "chatbubble-outline", "paper-plane-outline"];
@@ -56,9 +56,9 @@ function Fundo (props, {likedTesteFundo}, {like}) {
         </div>
 
         <div class="curtidas">
-          <img src= {props.likedImg}/>
+          <img src= {likedImg}/>
           <div class="texto">
-            Curtido por <strong>{props.likedUser}</strong> e <strong>outras {props.likedQnt} pessoas</strong>
+            Curtido por <strong>{likedUser}</strong> e <strong>outras {likedQnt} pessoas</strong>
           </div>
         </div>
       </div>
@@ -86,11 +86,11 @@ export default function Post (props) {
         <div class = "post" >
 
         <Topo imgUser = {props.imgUser} user = {props.user} />
-        <Conteudo imgContent = {props.imgContent} like = {like} likedTesteConteudo = {likedTesteConteudo}/>
+        <Conteudo imgContent = {imgContent} like = {like} likedTesteConteudo = {likedTesteConteudo}/>
         <Fundo 
-        likedImg = {props.likedImg}
-        likedUser = {props.likedUser}
-        likedQnt = {props.likedQnt}
+        likedImg = {likedImg}
+        likedUser = {likedUser}
+        likedQnt = {likedQnt}
         like = {like}
         likedTesteFundo = {likedTesteFundo}
         />
